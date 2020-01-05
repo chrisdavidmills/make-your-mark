@@ -1,0 +1,57 @@
+#notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-shadow: rgb(0, 0, 0) 0 0 5px;
+    padding: 0;
+    overflow: hidden;
+    z-index: 9999;
+    font-family: marvel, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+.error {
+    color: black;
+    background-color: red;
+    border-color: #fac4c2;
+    animation: appear 0.6s linear 1 forwards;
+}
+
+.success {
+    color: rgb(42, 96, 37);
+    background-color: rgb(220, 241, 218);
+    border-color: rgb(206, 235, 204);
+}
+
+.appear {
+    animation: appear 0.4s linear 1 forwards;
+}
+
+.disappear {
+    animation: disappear 0.4s linear 1 forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

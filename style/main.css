@@ -1,0 +1,415 @@
+/* fonts */
+
+/* add fonts back here onoce decision is made */
+
+/* Typography */
+
+h2 {
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: red;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+p, li {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+h3, p, li, button, table, form {
+    font-family: sans-serif;
+}
+
+/* general layout and style */
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1280px;
+    min-width: 360px;
+}
+
+img, iframe, video {
+    max-width: 70%;
+}
+
+article img, iframe, video {
+    display: block;
+    margin: 0 auto;
+}
+
+iframe {
+  margin-bottom: 20px;
+}
+
+img {
+    height: auto;
+}
+
+/* bullshit instagram fix; by default iframe had min-width: 326px set on it, causing it to spill out of narrow columns */
+
+[class*="instagram"] {
+    min-width: auto !important;
+    margin: 0 auto !important;
+}
+
+/* Another bullshit fix to center the twitter-widget custom element Twitter uses for their embeds */
+
+twitter-widget {
+    margin: 0 auto;
+}
+
+/* general link styling */
+
+a {
+    text-decoration: none;
+    color: blue;
+    transition: color 0.4s;
+}
+
+a:hover, a:focus {
+    color: lightblue;
+}
+
+a:active {
+    color: lightblue;
+}
+
+/* header layout */
+
+header {
+    padding: 30px 0;
+    background: radial-gradient(circle at 10% 20%,
+      white, white 10%, cyan 30%, blue 80%, darkblue);
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+/* nav layout */
+
+nav {
+    margin: 0 0 2.5rem;
+    padding: 0.5rem 20px;
+    background-color: white;
+    border: 1px solid blue;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    flex: 1 100px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    line-height: 3rem;
+    text-align: center;
+}
+
+nav li.cart {
+    flex: 1 160px;
+}
+
+nav li.cart img {
+    height: 16px;
+}
+
+nav li.search {
+    display: flex;
+    justify-content: center;
+}
+
+nav li input {
+    padding: 5px;
+    line-height: 1rem;
+    -webkit-appearance: none;
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+}
+
+nav form * {
+    margin-right: 10px;
+}
+
+nav form *:last-child {
+    margin-right: 0;
+}
+
+nav form img {
+    height: 26px;
+    max-width: none;
+}
+
+nav form button, .body-content button, .latest button {
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 0 10px;
+}
+
+/* menu button that displays the menu in the mobile version */
+
+.toggle {
+    display: none;
+    margin: 0 20px;
+    background-image: url(../images/icons/menu-icon.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 7% 60%;
+    cursor: pointer;
+    outline: none;
+}
+
+.toggle > button {
+    border: 0;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 0;
+    background: none;
+    color: #999;
+    transition: color 0.4s;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    line-height: 3rem;
+    cursor: pointer;
+}
+
+.toggle > button:hover, .toggle > button:focus {
+    color: #ccc;
+    outline: none;
+}
+
+.toggle > button:active {
+    color: #ddd;
+}
+
+/* main content layout */
+
+main {
+    display: flex;
+    margin: 0 20px;
+}
+
+.body-content {
+    flex: 5;
+    margin-right: 1%;
+}
+
+.latest {
+    flex: 3;
+}
+
+/* Styling for the filter */
+
+.filter {
+    text-align: center;
+}
+
+.filter select {
+  background: linear-gradient(to bottom, white, white 40%,#ccc);
+  padding: 5px;
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+/* news AND latest releases */
+
+.body-content img, .latest img {
+    display: block;
+    margin: 0 auto;
+}
+
+.latest article, .body-content article {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.body-content p, .body-content button {
+    display: block;
+    margin: 20px 10px;
+}
+
+/* tiled layout for merch, videos, images, etc. */
+
+.tiled-layout {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tiled-layout article {
+    flex-basis: 150px;
+    margin: 0 5px 0 0;
+}
+
+.tiled-layout iframe {
+    flex-basis: 200px;
+    margin: 0 5px 5px 0;
+}
+
+.tiled-layout img {
+    max-width: 100%;
+}
+
+/* footer layout */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+    background: radial-gradient(circle at 10% 20%,
+      white, white 10%, cyan 30%, blue 80%, darkblue);
+}
+
+footer p {
+    line-height: 2;
+}
+
+footer img {
+    display: block;
+}
+
+p.social {
+  display: flex;
+  align-items: center;
+}
+
+footer p.social {
+    width: 150px;
+    justify-content: space-between;
+}
+
+.body-content p.social {
+    width: auto;
+    justify-content: flex-start;
+}
+
+/* narrow-ish layout, search form brought onto next line */
+
+@media(max-width: 1060px) {
+    nav li form {
+        width: 70%;
+    }
+
+    nav li input {
+        width: 70%;
+    }
+
+    nav li.search {
+        flex: 1 350px;
+    }
+}
+
+/* main narrow desktop layout */
+
+@media(max-width: 960px) {
+    html {
+        background-image: none;
+        background-color: black;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    img, iframe, video {
+        max-width: 90%;
+    }
+
+    footer img {
+      max-width: 70%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    nav li {
+        text-align: center;
+    }
+
+    .latest {
+        flex: 4;
+    }
+}
+
+/* narrow device/mobile layout */
+
+@media(max-width: 650px) {
+    nav {
+        padding: 1rem 0 0 0;
+        margin: 0;
+    }
+
+    main {
+      display: block;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0 20px;
+    }
+
+    nav li {
+        text-align: left;
+    }
+
+    nav li.search {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav li form {
+        width: 100%;
+    }
+
+    nav li input {
+        width: 100%;
+    }
+
+    .body-content {
+        margin-right: 0;
+    }
+}

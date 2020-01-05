@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Make Your Mark - Checkout</title>
+
+    <link href="style/main.css" rel="stylesheet">
+    <link href="style/checkout.css" rel="stylesheet">
+    <script defer src="script/checkout.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><img src="images/mym-logo.png" alt="Make your mark sea tackle supplies"></h1>
+    </header>
+    <main>
+      <section class="body-content">
+        <h2>Checkout</h2>
+
+        <form>
+
+          <fieldset>
+            <legend>Name and contact</legend>
+            <div>
+              <label for="first-name">First name:</label>
+              <input type="text" id="first-name" required>
+            </div>
+            <div>
+              <label for="last-name">Last name:</label>
+              <input type="text" id="last-name" required>
+            </div>
+            <div>
+              <label for="telephone">Telephone:</label>
+              <input type="text" id="telephone" required>
+            </div>
+            <div>
+              <label for="e-mail">Email:</label>
+              <input type="email" id="e-mail" required>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Postage details</legend>
+            <div>
+              <label for="address-1">Address 1:</label>
+              <input type="text" id="address-1" required>
+            </div>
+            <div>
+              <label for="address-2">Address 2:</label>
+              <input type="text" id="address-2">
+            </div>
+            <div>
+              <label for="address-3">Address 3:</label>
+              <input type="text" id="address-3">
+            </div>
+            <div>
+              <label for="post-code">comment:</label>
+              <textarea id="post-code" required>
+              </textarea>
+            </div>
+            <div>
+              <label for="region">Region/ Postage:</label>
+              <select id="region">
+              </select>
+            </div>
+          </fieldset>
+
+          <input type="submit" value="Go to payment">
+        </form>
+
+      </section>
+      <section class="latest">
+        <h2>Your order</h2>
+        <ul>
+          <li>
+            <p><img src="images/products/daylight-rig.jpg" alt="Daylight rig"></p>
+            <p>Daylight rig &times; 2</p>
+            <p class="price">2</p>
+          </li>
+          <li>
+            <p><img src="images/products/20xpear.jpg" alt="20 pear clips"></p>
+            <p>20 x Pear clips &times; 3</p>
+            <p class="price">3.60</p>
+          </li>
+          <li>
+            <p><img src="images/products/8strand80.jpg" alt="8 strands, 80lb weight"></p>
+            <p>8 x 80lb strands &times; 1</p>
+            <p class="price">1.40</p>
+          </li>
+          <li>
+            <p></p>
+            <p>Postage</p>
+            <p class="postage-cost"><span></span></p>
+          </li>
+          <li>
+            <p></p>
+            <p>Total: </p>
+            <p class="total"><strong><span></span></strong></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

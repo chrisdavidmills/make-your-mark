@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Make Your Mark - Shopping Cart</title>
+
+    <link href="style/main.css" rel="stylesheet">
+    <link href="style/sticky-nav.css" rel="stylesheet">
+    <link href="style/cart.css" rel="stylesheet">
+    <script defer src="script/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><img src="images/mym-logo.png" alt="Make your mark sea tackle supplies"></h1>
+    </header>
+    <nav>
+      <div class="toggle"><button>Menu</button></div>
+      <ul>
+        <li id="nav-logo"><img src="images/cross-icon-64.png" alt="Make your mark logo"></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="cart">Cart <img src="images/icons/shopping-cart-icon.png" alt=""></li>
+        <li class="search"><form>
+              <img src="images/icons/search-icon.png" alt="search icon">
+              <input type="search" aria-label="search the APF records catalog">
+              <button>Search</button>
+            </form></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="body-content">
+        <h2>Your shopping cart</h2>
+
+        <div class="cart-container">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="images/products/daylight-rig.jpg" alt="Daylight rig"><p>Daylight rig</p></td>
+                <td><input type="number" aria-label="Quantity of Daylight rig" value="2" min="0"></td>
+                <td><p>2</p></td>
+                <td><button>Remove</button></td>
+              </tr>
+              <tr>
+                <td><img src="images/products/20xpear.jpg" alt="20 pear clips"><p>20 x Pear clips</p></td>
+                <td><input type="number" aria-label="Quantity of 20 x Pear clips" value="1" min="0"></td>
+                <td><p>1.20</p></td>
+                <td><button>Remove</button></td>
+              </tr>
+              <tr>
+                <td><img src="images/products/8strand80.jpg" alt="8 strands, 80lb weight"><p>8 x 80lb strands</p></td>
+                <td><input type="number" aria-label="Quantity of 8 x 80lb strands" value="3" min="0"></td>
+                <td><p>4.20</p></td>
+                <td><button>Remove</button></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="2">Total</th>
+                <td id="total"><p>7.40</p></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <p><a href="checkout.html"><button>Checkout</button></a></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2020 Make Your Mark</p>
+      <p class="social">
+        <a href="#"><img src="images/icons/twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="images/icons/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="images/icons/instagram-icon.png" alt="Instagram"></a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px 20px;
+}
+
+    th:first-of-type, td:first-of-type {
+        padding-left: 0;
+    }
+
+    th:last-of-type, td:last-of-type {
+        padding-right: 0;
+    }
+
+th {
+    height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+td {
+    text-align: center;
+}
+
+    td p {
+        line-height: 1.5;
+    }
+
+    td img {
+        width: 75px;
+        height: 75px;
+    }
+
+.body-content img {
+    margin: 0 20px 0 0;
+}
+
+tbody {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+    tbody tr td:first-of-type {
+        display: flex;
+        align-items: center;
+    }
+
+        tbody tr td:first-of-type p {
+            max-width: 300px;
+            text-align: left;
+            padding-right: 10px;
+        }
+
+table input {
+    padding: 5px;
+    line-height: 1rem;
+    font-size: 1rem;
+    width: 50px;
+}
+
+tr td:nth-of-type(3) p:before, #total p:before {
+    content: "£";
+    font-size: 1.2rem;
+}
+
+.body-content {
+    margin-right: 0;
+}
+
+@media(max-width: 650px) {
+    th, td {
+        padding: 10px 10px;
+    }
+
+        td img {
+            display: none;
+        }
+
+    table {
+        min-width: 610px;
+    }
+
+    .cart-container {
+        overflow-x: scroll;
+    }
+}

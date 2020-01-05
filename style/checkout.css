@@ -1,0 +1,205 @@
+/* Minimal form reset, as suggested by Rachel Andrew */
+
+fieldset button,
+fieldset input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+/* General form styles */
+
+.body-content form  {
+  font-size:  1.5rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+fieldset {
+  margin: 0 auto 40px;
+  padding: 40px 20px;
+  width: 70%;
+  max-width: 900px;
+}
+
+legend {
+  color: black;
+  background-color: #ccc;
+  padding: 5px 20px;
+}
+
+fieldset div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 20px;
+  max-width: 150px;
+  width: 40%;
+}
+
+fieldset input, select, textarea {
+  flex: auto;
+  padding: 5px;
+  width: 40%;
+}
+
+input[type="submit"] {
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+fieldset div:last-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+/* styling the items list */
+
+.latest ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.latest ul li {
+  display: flex;
+  align-items: center;
+}
+
+.latest img {
+  width: 75px;
+  height: 75px;
+  max-width: 100%;
+}
+
+.latest li p:nth-child(1) {
+  width: 75px;
+  margin-right: 20px;
+}
+
+.latest li p:nth-child(2) {
+  flex: 1;
+}
+
+.latest li p:nth-child(3) {
+  width: 30px;
+  margin-left: 20px;
+}
+
+.price:before, .total span:before, .subtotal span:before, .postage-cost span:before {
+    content: "£";
+    font-size: 1.2rem;
+}
+
+/* Hack the payment buttons  */
+
+#paymentButtons {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#paymentButtons p {
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 25px;
+}
+
+/* attempted fix for buttons jumping around on page load */
+#payPal {
+  height: 72px;
+}
+
+#paymentButtons button {
+  width: 100%;
+  margin: 0;
+  border-radius: 25px;
+  border: 0;
+  height: 45px !important;
+}
+
+.paypal-button {
+    height: 45px !important;
+    border-radius: 25px !important;
+}
+
+.paypal-buttons iframe {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+iframe {
+    max-width: 100% !important;
+}
+
+.paypal-button-container {
+    max-width: 100% !important;
+}
+
+/* On checkout step 1, make the two buttons inline */
+
+form[action="/Checkout"] button {
+    display: inline-block;
+}
+
+/* fix spacing of the captcha */
+
+form iframe {
+  padding-top: 47px;
+  margin-bottom: 0
+}
+
+/* put label and form inputs on separate lines if for gets too narrow */
+
+@media(max-width: 1000px) {
+  fieldset div {
+    flex-flow: row wrap;
+  }
+
+  label {
+    margin-right: 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  fieldset input, select, textarea {
+    flex: 1;
+    width: 100%;
+  }
+
+  form iframe {
+    padding-top: 10px;
+  }
+}
+
+/* narrow screen adjustments */
+
+@media(max-width: 800px) {
+  fieldset, section ul {
+    width: 85%;
+  }
+
+  .latest ul {
+    margin: 0 auto;
+  }
+
+  input[type="submit"] {
+    width: 80%;
+  }
+
+  .body-content {
+    margin-right: 0;
+  }
+}
