@@ -4,12 +4,25 @@
 
 /* Typography */
 
-h2 {
+html {
     font-family: sans-serif;
+}
+
+h2, h3 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+h2 {
     font-size: 2.5rem;
     letter-spacing: 3px;
     color: red;
     text-align: center;
+}
+
+.tagline {
+  transform: rotate(-7deg);
+  font-size: 3.5rem;
 }
 
 h3 {
@@ -24,15 +37,7 @@ p, li {
     letter-spacing: 0.5px;
 }
 
-h3, p, li, button, table, form {
-    font-family: sans-serif;
-}
-
 /* general layout and style */
-
-html {
-    font-family: sans-serif;
-}
 
 body {
     margin: 0 auto;
@@ -58,14 +63,14 @@ img {
     height: auto;
 }
 
-/* bullshit instagram fix; by default iframe had min-width: 326px set on it, causing it to spill out of narrow columns */
+/* instagram fix; by default iframe had min-width: 326px set on it, causing it to spill out of narrow columns */
 
 [class*="instagram"] {
     min-width: auto !important;
     margin: 0 auto !important;
 }
 
-/* Another bullshit fix to center the twitter-widget custom element Twitter uses for their embeds */
+/* Another fix to center the twitter-widget custom element Twitter uses for their embeds */
 
 twitter-widget {
     margin: 0 auto;
@@ -76,6 +81,7 @@ twitter-widget {
 a {
     text-decoration: none;
     color: blue;
+    text-shadow: 1px 1px 1px black;
     transition: color 0.4s;
 }
 
@@ -106,7 +112,6 @@ nav {
     margin: 0 0 2.5rem;
     padding: 0.5rem 20px;
     background-color: white;
-    border: 1px solid blue;
 }
 
 nav ul {
@@ -287,45 +292,35 @@ footer {
     padding: 0 20px;
     margin-top: 20px;
     background: radial-gradient(circle at 10% 20%,
-      white, white 10%, cyan 30%, blue 80%, darkblue);
+      white, white 10%, cyan 30%, white 80%, cyan);
+    border: 1px solid cyan;
 }
 
-footer p {
-    line-height: 2;
+footer div {
+  width: 360px;
+}
+
+footer div p {
+  display: flex;
+  align-items: flex-start;
+}
+
+footer span {
+  flex: auto;
 }
 
 footer img {
-    display: block;
+  flex: 0 32px;
+  margin-right: 20px;
 }
 
-p.social {
-  display: flex;
-  align-items: center;
-}
 
-footer p.social {
-    width: 150px;
-    justify-content: space-between;
-}
-
-.body-content p.social {
-    width: auto;
-    justify-content: flex-start;
-}
 
 /* narrow-ish layout, search form brought onto next line */
 
 @media(max-width: 1060px) {
-    nav li form {
-        width: 70%;
-    }
-
-    nav li input {
-        width: 70%;
-    }
-
     nav li.search {
-        flex: 1 350px;
+        flex: 1 480px;
     }
 }
 
@@ -334,7 +329,6 @@ footer p.social {
 @media(max-width: 960px) {
     html {
         background-image: none;
-        background-color: black;
     }
 
     body {
