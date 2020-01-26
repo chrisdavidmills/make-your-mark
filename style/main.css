@@ -196,7 +196,6 @@ nav form button, .body-content button, .latest button {
     text-transform: uppercase;
     padding-left: 0;
     background: none;
-    color: #999;
     transition: color 0.4s;
     font-size: 1.5rem;
     letter-spacing: 4px;
@@ -290,7 +289,7 @@ footer {
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 20px;
-    background-color: rgb(159, 183, 207); 
+    background-color: rgb(159, 183, 207);
 }
 
 footer div {
