@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="style/checkout.css" rel="stylesheet">
+    <script defer src="script/headerGradient.js"></script>
 
     <title>Make Your Mark - Order confirmation</title>
+    <link href="style/main.css" rel="stylesheet">
     <style>
       .body-content {
         width: 95%;
@@ -17,8 +19,16 @@
         padding-top: 40px;
         text-align: center;
       }
+
+      .latest li {
+        justify-content: space-around;
+      }
+
+      .latest img {
+        margin: 0;
+        flex: 0 0 75px;
+      }
     </style>
-    <link href="style/main.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -78,9 +88,11 @@
             </div>
           </li>
           <li class="postage-cost">
+            <p></p>
             <p>Postage: £2</p>
           </li>
           <li class="total">
+            <p></p>
             <p><strong>Total: £7</strong></p>
           </li>
         </ul>

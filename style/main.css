@@ -97,8 +97,7 @@ a:active {
 
 header {
     padding: 30px 0;
-    background: radial-gradient(circle at 10% 20%,
-      white, white 10%, cyan 30%, blue 80%, darkblue);
+    background-color: rgb(159, 183, 207);
 }
 
 h1 {
