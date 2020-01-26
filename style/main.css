@@ -290,9 +290,7 @@ footer {
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 20px;
-    background: radial-gradient(circle at 10% 20%,
-      white, white 10%, cyan 30%, white 80%, cyan);
-    border: 1px solid cyan;
+    background-color: rgb(159, 183, 207); 
 }
 
 footer div {
