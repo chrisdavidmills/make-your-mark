@@ -80,17 +80,17 @@ twitter-widget {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: #4f7ba7;
     text-shadow: 1px 1px 1px black;
     transition: color 0.4s;
 }
 
 a:hover, a:focus {
-    color: lightblue;
+    color: #a3bad1;
 }
 
 a:active {
-    color: lightblue;
+    color: #a3bad1;
 }
 
 /* header layout */
@@ -288,7 +288,6 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    margin-top: 20px;
     background-color: rgb(159, 183, 207);
 }
 
