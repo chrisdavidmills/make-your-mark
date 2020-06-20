@@ -36,48 +36,13 @@
               </label>
             </div>
           </fieldset>
-
-          <fieldset class="credit-card">
-            <legend>Enter credit card details</legend>
-            <div>
-              <label for="cc-number">Card number:</label>
-              <input type="tel" id="cc-number" required>
-            </div>
-            <div>
-              <label for="cc-month">Expiry month:</label>
-              <select id="cc-month" required>
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-              </select>
-            </div>
-            <div>
-              <label for="cc-year">Expiry year:</label>
-              <select id="cc-year" required>
-              </select>
-            </div>
-            <div>
-              <label for="cvv">CVV:</label>
-              <input type="tel" id="cvv" required>
-              </textarea>
-            </div>
-            <div>
-              <label for="cc-issue">Issue number (if applicable):</label>
-              <input type="tel" id="cc-issue">
-            </div>
-          </fieldset>
-
-          <button>Submit credit card payment</button>
         </form>
+
+      <h3 class="payment-title">Credit/debit card payment</h3>
+
+      <p class="payment-para">You have the "Credit/debit card payment" option selected. Press the button below to be taken to the website of our trusted payment vendor — Stripe — where you can fill in your card details to pay for your order. Once you have completed payment, you will be redirected back to this website.</p>
+
+      <p><button class="payment-button">Proceed to Stripe website</button></p>
 
       </section>
       <section class="latest">

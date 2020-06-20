@@ -1,0 +1,18 @@
+.body-content article a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blurb {
+ width: 200px;
+ margin-right: 20px;
+}
+
+.poster {
+   display: flex;
+   align-items: center;
+}
+
+.poster img  {
+  width: 200px;
+}
